@@ -55,3 +55,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - Got 403 from deployed application, changed ingress settings to all: `--ingress-settings=all`. But now getting internal server error when access the app
   - Still getting some weird permission denied issues - I realized the point of my exercise is to get pull request environments running rather than a perfect setup from square one,
   I'm going to follow a guide that is more straight forward than figuring it out on my own. 
+  - Turns out following googles example is the easiest path....... https://cloud.google.com/run/docs/deploying#console
+- Deploy successful but static assets are broken
