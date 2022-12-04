@@ -19,7 +19,6 @@ steps:
       - --source=.
       - --allow-unauthenticated
       - --ingress-settings=internal-and-gclb
-      - --memory=128MB
       - --trigger-http
       - --runtime=nodejs16
-      - --project=environment-test
+      - --project=environment-test-370523
