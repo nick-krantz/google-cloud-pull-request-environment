@@ -16,6 +16,7 @@ steps:
       - nextjs
       - --gen2
       - --region=us-central1
+      - --entry-point=nextjs
       - --source=.
       - --allow-unauthenticated
       - --ingress-settings=internal-and-gclb

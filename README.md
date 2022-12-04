@@ -48,4 +48,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - Failed second time because I didn't enable google cloud function api
   - Third failed again because of permissions but I think it was because I had an invalid region in `cloudbuild.yaml`
   - 4th failed again, same reason, going to try locally just to see if something fun is happening. Locally, I tried to enable cloud functions via the CLI but also failed because of permissions. I found a SO post about adding "Cloud Build Service Account" IAM role to the projects service account. Going to see if that works.
-  - Alright, I needed to enable permissions within Google Cloud Build and I had my project wrong in the commands
+  - Alright, I needed to enable permissions within Google Cloud Build and I had my project-id wrong in the commands, so I was able to use the CLI locally to enable a bunch of cloud APIs that I needed.
+    The build & deploy still failed because my entry point to my app was wrong
+  - Trying again but putting an `index.js` file at the root with a cloud function listening for `nextjs` request that will serve the nextjs app. Configured the entry-point in the `cloudbuild.yaml` as well.
