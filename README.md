@@ -44,4 +44,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - trigger didn't run on first push because my build file wasn't found
   - turns out that my build file had to be `cloudbuild.yaml` not prefixed with `.`
 - Adding deployment build step in `cloudbuild.yaml`
-  - 
+  - Failed first time because my `next.config.js` was incorrect so the build failed
+  - Failed second time because I didn't enable google cloud function api
