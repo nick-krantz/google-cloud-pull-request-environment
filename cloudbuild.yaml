@@ -8,3 +8,18 @@ steps:
     entrypoint: yarn
     args:
       - build
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    args:
+      - gcloud
+      - functions
+      - deploy
+      - nextjs
+      - --gen2
+      - --region=global
+      - --source=.
+      - --allow-unauthenticated
+      - --ingress-settings=internal-and-gclb
+      - --memory=128MB
+      - --trigger-http
+      - --runtime=nodejs16
+      - --project=environment-test

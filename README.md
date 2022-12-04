@@ -42,3 +42,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Added `.cloudbuild.yaml` file to the repo that should install and build the app
 - Created test trigger in Google Cloud Build that runs on push to main
   - trigger didn't run on first push because my build file wasn't found
+  - turns out that my build file had to be `cloudbuild.yaml` not prefixed with `.`
+- Adding deployment build step in `cloudbuild.yaml`
+  - 
