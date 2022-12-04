@@ -19,7 +19,7 @@ steps:
       - --entry-point=nextjs
       - --source=.
       - --allow-unauthenticated
-      - --ingress-settings=internal-and-gclb
+      - --ingress-settings=all
       - --trigger-http
       - --runtime=nodejs16
       - --project=environment-test-370523
