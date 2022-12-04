@@ -53,4 +53,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - Trying again but putting an `index.js` file at the root with a cloud function listening for `nextjs` request that will serve the nextjs app. Configured the entry-point in the `cloudbuild.yaml` as well.
   - New error: Permission 'run.services.setIamPolicy', so baby steps? Running commands locally to see if I get more information from the CLI.
   - Got 403 from deployed application, changed ingress settings to all: `--ingress-settings=all`. But now getting internal server error when access the app
-  
+  - Still getting some weird permission denied issues
