@@ -15,7 +15,7 @@ steps:
       - deploy
       - nextjs
       - --gen2
-      - --region=global
+      - --region=us-central1
       - --source=.
       - --allow-unauthenticated
       - --ingress-settings=internal-and-gclb

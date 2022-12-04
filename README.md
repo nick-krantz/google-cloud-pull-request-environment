@@ -46,3 +46,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Adding deployment build step in `cloudbuild.yaml`
   - Failed first time because my `next.config.js` was incorrect so the build failed
   - Failed second time because I didn't enable google cloud function api
+  - Third failed again because of permissions but I think it was because I had an invalid region in `cloudbuild.yaml`
